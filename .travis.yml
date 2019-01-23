@@ -61,6 +61,7 @@ matrix:
 install:
   - |
     if [[ "${TRAVIS_OS_NAME}" == "osx" ]]; then
+        brew update &> /dev/null
         brew install cmake boost python open-mpi
         brew reinstall gcc
         pip install virtualenv
