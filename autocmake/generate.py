@@ -147,7 +147,7 @@ def gen_setup(config, default_build_type, relative_path, setup_script_name):
     s.append("build_path = arguments['<builddir>']")
     s.append("\n")
     s.append("# create cmake command")
-    s.append("cmake_command = '{0} -H{1}'.format(gen_cmake_command(options, arguments), root_directory)")
+    s.append("cmake_command = '{0} -H\"{1}\"'.format(gen_cmake_command(options, arguments), root_directory)")
     s.append("\n")
     s.append("# run cmake")
     s.append("configure.configure(root_directory, build_path, cmake_command, arguments['--show'])")
