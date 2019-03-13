@@ -25,7 +25,7 @@ Now we create ``cmake/`` and fetch ``update.py``::
 
   $ mkdir cmake  # does not have to be called "cmake" - take the name you prefer
   $ cd cmake
-  $ wget https://github.com/dev-cafe/autocmake/raw/master/update.py
+  $ wget https://raw.githubusercontent.com/dev-cafe/autocmake/master/update.py
   $ python update.py --self
 
 Now from top-level our file tree looks like this::
