@@ -129,7 +129,7 @@ def configure(root_directory, build_path, cmake_command, only_show):
     if not only_show:
         setup_build_path(build_path)
 
-    cmake_command += ' -B' + build_path
+    cmake_command += ' -B\"{0}\"'.format(build_path)
     print('{0}\n'.format(cmake_command))
     if only_show:
         sys.exit(0)
