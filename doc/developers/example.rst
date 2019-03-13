@@ -55,6 +55,8 @@ Now we edit ``cmake/autocmake.yml`` to look like this::
   name: hello
 
   min_cmake_version: 2.8
+  
+  default_build_type: release
 
   language:
     - Fortran
@@ -87,7 +89,7 @@ We wrote that we want to get an executable "hello.x" built from our sources.
 Now we have everything to generate ``CMakeLists.txt`` and a setup script::
 
   $ cd cmake
-  $ python update ..
+  $ python update.py ..
 
   - parsing autocmake.yml
   - assembling modules: [##############################] (3/3)
